@@ -1,4 +1,5 @@
-# ubuntu-on-windows-setup
+# Installing Ubuntu on Windows 10
+
 This content used to help setup Ubuntu on Windows 10, to semi-replicate a Mac terminal setup for developing Ruby on Rails (or any other code you would want to use).
 
 I use this for my own purposes, but you, the reader, can use this information for your own purposes as well. These instructions are given only for demonstration purposes, they are not a definitive guide on how to setup a Windows 10 to use Ubuntu or any other content. Follow the instructions at your own risk. You bear the full responsibility of the outcome for following these instructions. By using these instructions, you agree to owning and accepting the full liablity of the outcome or result. Additionally, you are welcome to fork this project/information and/or submit pull requests (PR) to add to the information of the project. I retain the right to accept or reject any PR for any reason. You are welcome to write up your own doc and post it where you want if you don't agree with what's posted. Now that we understand what this is for, let's move on to the good parts.
