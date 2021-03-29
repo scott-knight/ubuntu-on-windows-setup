@@ -23,6 +23,8 @@ Sources:
 
 ![pin to start](https://user-images.githubusercontent.com/516548/112906501-e295a080-90b1-11eb-824d-a24eb588add8.png)
 
+<br/>
+
 6. Close Micrsoft Store.
 7. Click on the Windows Start icon. You should see `Terminal` icon in the Start Menu
 
