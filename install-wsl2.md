@@ -8,8 +8,8 @@ This document explains how to install Windows 10 WSL 2.
 
 Information for this guide was taken [from here](https://www.tecklyfe.com/how-to-enable-wsl2-on-windows-10/), and [here](https://www.windowscentral.com/how-install-wsl2-windows-10).
 
-1. Enter your computers BIOS and make sure virtualization enabled; save, close, reboot.
-2. Open PowerShell as Administrator. Click the Windows Start icon. Scroll to and click the `Windows PowerShell` folder. Right-click on the `Windows PowerShell` icon. Click on `Run as Administrator`. 
+1. Enter your computers BIOS and make sure (Hyper-V) virtualization is enabled (if it isn't already). Save the settings and reboot.
+2. Open PowerShell as Administrator: Click the Windows Start icon. Scroll to and click the `Windows PowerShell` folder. Right-click on the `Windows PowerShell` icon. Click on `Run as Administrator`. 
 
 ![run as administrator](https://user-images.githubusercontent.com/516548/112900455-27690980-90a9-11eb-9d0f-0d9f898070a1.png)
 
