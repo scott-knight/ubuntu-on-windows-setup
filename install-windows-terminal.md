@@ -40,4 +40,4 @@ If you right-click on `Terminal` icon in the `Start Menu`. You will see a list o
 
 <br/>
 
-In this example, you can see that I already have Ubuntu installed. You will also see that option once it's installed. It won't be there until it's installed. 
+In this example, you can see that I already have Ubuntu installed. You will also see that option once it's installed on your computer. It won't be there until it's installed. 
