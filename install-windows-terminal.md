@@ -12,7 +12,7 @@ Sources:
 
 1. To install Windows Terminal, open Microsoft Store. 
 2. In the search bar type `Windows Terminal`.
-3. Select `Windows Terminal`
+3. Select `Windows Terminal` app.
 
 ![store-windows-terminal](https://user-images.githubusercontent.com/516548/112906259-83379080-90b1-11eb-9405-bbf63c99fad3.png)
 
