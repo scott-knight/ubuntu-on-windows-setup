@@ -16,8 +16,10 @@ Sources:
 
 ![store-windows-terminal](https://user-images.githubusercontent.com/516548/112906259-83379080-90b1-11eb-9405-bbf63c99fad3.png)
 
-4. When the Windows Terminal app windo loads, click the install button.
-5. After it install, click on the 3-dot elipses, and click `Pin to Start`
+<br/>
+
+4. After the Windows Terminal app window loads, click the `Install` button.
+5. After it installs, click on the 3-dot elipses, and click `Pin to Start`
 
 ![pin to start](https://user-images.githubusercontent.com/516548/112906501-e295a080-90b1-11eb-824d-a24eb588add8.png)
 
