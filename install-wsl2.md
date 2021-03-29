@@ -15,33 +15,31 @@ Information for this guide was taken [from here](https://www.tecklyfe.com/how-to
 
 3. Run (one of the two) following commands in the console:
 
-This is more verbose:
 ```sh
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ```
 OR
 
-Not as verbose, and may ask if you want to reboot after the install:
 ```sh
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
 ```
 
 4. Reboot
-5. After the reboot, open PowerShell as Administrator (repeat step 2), run this command in the console:
+5. After the reboot, open PowerShell as Administrator (repeat step 2)
+6. Run (one of the two) following commands in the console:
 
-This is more verbose
 ```sh
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
 OR 
 
-Not as verbose, and may ask if you want to reboot after the install:
 ```sh
 Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
 ```
 
-6. Reboot
-7. After the reboot, open PowerShell as Administrator (repeat step 2), run (one of the two) following commands in the console::
+7. Reboot
+8. After the reboot, open PowerShell as Administrator (repeat step 2) 
+9. Run the following commands in the console::
 
 ```sh
 wsl --set-default-version 2
