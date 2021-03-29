@@ -30,6 +30,8 @@ Sources:
 
 ![terminal](https://user-images.githubusercontent.com/516548/112906652-24bee200-90b2-11eb-852e-3bf285f7c9d5.png)
 
+<br/>
+
 ## Using Terminal
 
 If you right-click on `Terminal` in the Start Menu, you will see a list of available terminial options
