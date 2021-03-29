@@ -5,7 +5,7 @@ I use this for my own purposes, but you, the reader, can use this information fo
 
 Below is the step-by-step guide on how to install all the bits needed to get an Ubuntu instance installed, setup and customized to a state where you can use a console session to write and push code. The details of each of the steps (and there precise order of install) are a little hazy as I went through this process over the course of a few days. Additionally, I didn't anticipate creating a step-by-step guide, but I found myself creating notes incase I blew my Windows 10 install (which never happened) and/or my Ubuntu install (which I did happen several times). That being said, here is the (fuzzy) list of things that need to be done in order to get things working.
 
-1. [Install WSL2]()
+1. [Install WSL2](https://github.com/scott-knight/ubuntu-on-windows-setup/blob/main/install-wsl2.md)
 2. [Install VSCode (if you want)](https://github.com/scott-knight/ubuntu-on-windows-setup/blob/main/install-vscode.md)
 3. [Install Windows Terminal](https://github.com/scott-knight/ubuntu-on-windows-setup/blob/main/install-windows-terminal.md)
 4. [Install oh-my-posh and required libraries](https://github.com/scott-knight/ubuntu-on-windows-setup/blob/main/Install%20oh-my-posh-and-required-libraries.md)
@@ -21,7 +21,7 @@ You will need to repeat steps 5-7 if you decide to delete your current install o
 
 ## Install WSL2
 
-This is required to install the Windows Subsystem which runs virtual instances on Windows. Instructions to install WSL2 can be [found here]().
+This is required to install the Windows Subsystem which runs virtual instances on Windows. Instructions to install WSL2 can be [found here](https://github.com/scott-knight/ubuntu-on-windows-setup/blob/main/install-wsl2.md).
 
 
 ## Install VSCode
