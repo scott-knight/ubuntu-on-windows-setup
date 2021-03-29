@@ -37,3 +37,7 @@ Sources:
 If you right-click on `Terminal` icon in the `Start Menu`. You will see a list of available terminial options:
 
 ![terminal options](https://user-images.githubusercontent.com/516548/112906800-6bacd780-90b2-11eb-956c-bca8abee1805.png)
+
+<br/>
+
+In this example, you can see that I already have Ubuntu installed. You will also see that option once it's installed. It won't be there until it's installed. 
