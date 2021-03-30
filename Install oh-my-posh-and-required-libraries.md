@@ -102,6 +102,10 @@ Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser
 
 <br/>
 
-The fonts should now be available for the settings in terminal.
+The fonts should now be available for the settings in terminal. How to set the correct font is demonstrated [here](https://github.com/scott-knight/ubuntu-on-windows-setup/blob/main/configure-windows-terminal.md)
+
+## Notes for oh-my-posh
+
+You can actually use `oh-my-posh` with Ubuntu. However, I prefer to use `oh-my-zsh`. You can read more about using `oh-my-posh` [here](https://docs.microsoft.com/en-us/windows/terminal/tutorials/powerline-setup#set-up-powerline-in-wsl-ubuntu).
 
 
