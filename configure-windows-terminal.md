@@ -48,4 +48,4 @@ In the example you can see that I pasted the `ubuntu` shell `guid` in the `defau
 
 <br/>
 
-8. After you save the settings, when you click on the `Windows Terminal` icon in the `Start Menu` it will automatically open desired shell.
+8. After you save the settings, when you click on the `Windows Terminal` icon in the `Start Menu`, it will automatically open desired shell.
