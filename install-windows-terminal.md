@@ -40,4 +40,7 @@ If you right-click on `Terminal` icon in the `Start Menu`. You will see a list o
 
 <br/>
 
-In this example, you can see that I already have Ubuntu installed. You will also see that option once it's installed on your computer. It won't be there until it's installed. 
+In this example, you can see that I already have Ubuntu installed. You will also see that option once it's installed on your computer. It won't be there until it's installed.
+
+Now you are ready to move to the next setup step. The next document can be found [here](https://github.com/scott-knight/ubuntu-on-windows-setup/blob/main/Install%20oh-my-posh-and-required-libraries.md).
+
