@@ -45,5 +45,5 @@ Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
 wsl --set-default-version 2
 ```
 
-WSL2 will be installed and ready to go. 
+WSL2 will be installed and ready to go. Now you can move on to the next installation step, install VSCode, which is found [here](https://github.com/scott-knight/ubuntu-on-windows-setup/blob/main/install-vscode.md).
 
