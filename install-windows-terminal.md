@@ -1,10 +1,6 @@
 # Install Windows Terminal
 
-This document contains instructions for installing Windows Terminal. 
-
-Sources: 
-
-* [Microsoft Overview](https://docs.microsoft.com/en-us/windows/terminal/)
+To get everything working correctly, you will need to install the new Windows Terminal as it IS NOT installed in Windows by default. Source, [Microsoft Overview](https://docs.microsoft.com/en-us/windows/terminal/).
 
 <br/>
 
@@ -42,5 +38,5 @@ If you right-click on `Terminal` icon in the `Start Menu`. You will see a list o
 
 In this example, you can see that I already have Ubuntu installed. You will also see that option once it's installed on your computer. It won't be there until it's installed.
 
-Now you are ready to move to the next setup step. The next document can be found [here](https://github.com/scott-knight/ubuntu-on-windows-setup/blob/main/Install%20oh-my-posh-and-required-libraries.md).
+Now you are ready to move to the [next setup step](https://github.com/scott-knight/ubuntu-on-windows-setup/blob/main/Install%20oh-my-posh-and-required-libraries.md).
 
