@@ -19,6 +19,8 @@ You can download and install any version of Ubuntu, there is a way to do it via 
 6. After creating your user name, it will ask for a password. Choose a password and hit enter. It will ask you to re-enter the password again to verify.
 7. Once done with setting up your user name and password, it will open a Bash console session, you will in the Ubuntu instance in your home directory. 
 
+<br/>
+
 ## Opening an Ubuntu instance
 
 Now that you have Ubuntu installed, you can right-click on the Windows Terminal icon in the `Start Menu`. You will see Ubuntu in the list.
