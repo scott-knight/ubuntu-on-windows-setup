@@ -107,4 +107,4 @@ Then I paste the following:
 
 Once your account is ready to sync, your extensions are installed and your JSON settings are in place, you are good to go. The next time you install VSCode, simply log in to your account and all the extensions and settings will automatically pull down to VSCode, saving you a ton of time in setup.
 
- 
+Now you are ready to move to the next setup step, which can be found [here](https://github.com/scott-knight/ubuntu-on-windows-setup/blob/main/install-windows-terminal.md) 
