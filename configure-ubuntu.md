@@ -1,6 +1,6 @@
 # Customize Ubuntu
 
-This document explains how to customize Ubuntu. This document assumes you have followed the installation and setup instrcutions from all of the previous steps.  
+This is the step-by-step guide for customizing Ubuntu to use all the settings, aliases, functions, etc., that I use every day. You don't have to do this step either. Ubuntu runs with or without this customization. Also, if you go through the step-by-step guide and don't like the setup, you can simply delete the Ubuntu instance and reinstall it. It will be a completely clean install of Ubuntu, no settings will carry over.
 
 <br/>
 
