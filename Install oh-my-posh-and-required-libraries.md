@@ -67,7 +67,7 @@ Set-PoshPrompt -Theme paradox
 
 ```sh
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine
-``
+```
 
 4. Then this:
 
