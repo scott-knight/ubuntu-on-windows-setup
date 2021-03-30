@@ -111,7 +111,9 @@ Reference found [here](https://docs.brew.sh/Homebrew-on-Linux)
 2. You should be prompted about default settings and installation. Simply accept the defaults.
 3. Once finished, add the following to your `.zshrc` file
 
-> eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+```sh
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+```
 
 4. Reload the ubuntu shell.
 5. Add BREW taps
