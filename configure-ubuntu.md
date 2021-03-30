@@ -316,10 +316,8 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 plugins=(
   colorize
   git
-  iterm2
   node
   npm
-  osx
   rbenv
   ruby
   vscode
