@@ -111,9 +111,8 @@ Reference found [here](https://docs.brew.sh/Homebrew-on-Linux)
 2. You should be prompted about default settings and installation. Simply accept the defaults.
 3. Once finished, add the following to your `.zshrc` file
 
-```sh
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-```
+> eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
 4. Reload the ubuntu shell.
 5. Add BREW taps
 
@@ -130,5 +129,29 @@ brew install automake curl-openssl elixir erlang node@14 postgres python ruby sq
 <br/>
 
 ## INSTALL RBENV
+
+To install RBENV, run the following:
+
+```sh
+git clone https://github.com/rbenv/rbenv.git ${HOME}/.rbenv
+```
+
+Add the following to `.zshrc`:
+
+> # RBENV
+> export RBENV_ROOT="${HOME}/.rbenv"
+> export PATH="${RBENV_ROOT}/bin:${RBENV_ROOT}/shims:$PATH"
+> if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
+ 
+Close and reload the Ubuntu instance
+
+<br/>
+
+## Install ruby-build rbenv-gemset rbenv-whatis rbenv-use
+
+To install RBENV plugins, run the following:
+
+
+
 
 
