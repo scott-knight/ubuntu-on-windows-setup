@@ -42,4 +42,5 @@ This will attempt to open VSCode and connect VSCode to your WSL2, Ubuntu instanc
 <br/>
 
 2. Close VSCode and the terminal 
-3. Next, you will update the settings of Windows Terminal. Instructions are found [here](https://github.com/scott-knight/ubuntu-on-windows-setup/blob/main/configure-windows-terminal.md).
+
+Next, you will update the settings of Windows Terminal. Instructions are found [here](https://github.com/scott-knight/ubuntu-on-windows-setup/blob/main/configure-windows-terminal.md).
