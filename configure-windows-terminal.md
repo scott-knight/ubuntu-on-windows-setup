@@ -1,6 +1,6 @@
 # Configure Windows Terminal
 
-This document explains how to configure the settings of Windows 10, Windows Terminal. This document assumes you have followed all of the previous setup steps.
+Once you have Ubuntu installed you will need to configure Windows Terminal to use the correct Powerline icons. Again, you don't have to do this step if you aren't using Windows Terminal powershell or a zsh theme that doesn't require them.
 
 <br/>
 
