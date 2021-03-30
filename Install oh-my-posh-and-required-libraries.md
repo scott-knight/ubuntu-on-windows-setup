@@ -2,21 +2,18 @@
 
 This document contains information on how to install oh-my-posh and various libraies used for powershell and zsh themes.
 
-Sources:
-
-* [Powerline Setup](https://docs.microsoft.com/en-us/windows/terminal/tutorials/powerline-setup)
-* [Cascadia Code](https://github.com/microsoft/cascadia-code)
+[Oh-my-posh](https://ohmyposh.dev/) is similar to [oh-my-zsh](https://ohmyz.sh/). It works in Windows PowerShell which is used in the Windows Terminal. There's minimal setup needed for running (my personal preference) zsh instances. You don't have to do this step either if you don't plan on using a powershell or zsh theme which requires Powerline icons. Sources: [Powerline Setup](https://docs.microsoft.com/en-us/windows/terminal/tutorials/powerline-setup), [Cascadia Code](https://github.com/microsoft/cascadia-code)
 
 
 ## Install Git For Windows
 
-Go [here](https://git-scm.com/downloads). Download and install `Git for Windows`
+I'm not entirely sure I understand why this step is needed. However, it says to do this in the [Powerline Setup doc](https://docs.microsoft.com/en-us/windows/terminal/tutorials/powerline-setup). Download and install [Git for Windows](https://git-scm.com/downloads)
 
 <br/>
 
-## Installing Powerline
+## Install Powerline
 
-Using PowerShell, install `Posh-Git` and `Oh-My-Posh`. [Posh-Git](https://github.com/dahlbyk/posh-git) adds Git status information to your prompt as well as tab-completion for Git commands, parameters, remotes, and branch names. [Oh-My-Posh](https://github.com/JanDeDobbeleer/oh-my-posh) provides theme capabilities for your PowerShell prompt.
+The next step is to install `Posh-Git` and `Oh-My-Posh`. [Posh-Git](https://github.com/dahlbyk/posh-git) adds Git status information to your prompt as well as tab-completion for Git commands, parameters, remotes, and branch names. [Oh-My-Posh](https://github.com/JanDeDobbeleer/oh-my-posh) provides theme capabilities for your PowerShell prompt.
 
 1. Open PowerShell as Administrator: Click the `Windows Start` icon. Scroll to and click the `Windows PowerShell` folder. Right-click on the `Windows PowerShell` icon. Click on `Run as Administrator`. 
 
@@ -106,6 +103,6 @@ The fonts should now be available for the settings in terminal. How to set the c
 
 ## Notes for oh-my-posh
 
-You can actually use `oh-my-posh` with Ubuntu. However, I prefer to use `oh-my-zsh`. You can read more about using `oh-my-posh` [here](https://docs.microsoft.com/en-us/windows/terminal/tutorials/powerline-setup#set-up-powerline-in-wsl-ubuntu).
+You can actually use `oh-my-posh` with Ubuntu. However, I prefer `oh-my-zsh`. You can read more about using `oh-my-posh` [here](https://docs.microsoft.com/en-us/windows/terminal/tutorials/powerline-setup#set-up-powerline-in-wsl-ubuntu).
 
-Now you are ready to install `Ubuntu`. The install instructions are found [here](https://github.com/scott-knight/ubuntu-on-windows-setup/blob/main/install-ubuntu.md).
+Now you're ready for the next step, [install Ubuntu](https://github.com/scott-knight/ubuntu-on-windows-setup/blob/main/install-ubuntu.md).
