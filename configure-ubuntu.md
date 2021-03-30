@@ -11,7 +11,7 @@ This document explains how to customize Ubuntu. This document assumes you have f
 
 ```sh
 sudo bash -c 'for i in update {,dist-}upgrade auto{remove,clean}; do apt-get $i -y; done'
-``
+```
 
 <br/>
 
