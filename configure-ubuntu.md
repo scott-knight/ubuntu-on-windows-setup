@@ -754,7 +754,9 @@ Replace the email and username with your values.
 
 <br/>
 
+## Reload
 
+After you have completed the setup, close and reload the ubuntu instance.
 
 
 
