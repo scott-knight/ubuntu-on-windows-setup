@@ -17,7 +17,7 @@ You can download and install any version of Ubuntu, there is a way to do it via 
 4. Once installed, click the `Launch` button. This will open a new termial session. 
 5. In the terminal session, it will ask for a user name. Input any username you want. I use the first inital of my first name in combination with my last name `sknight`.
 6. After creating your user name, it will ask for a password. Choose a password and hit enter. It will ask you to re-enter the password again to verify.
-7. Once done with setting up your user name and password, it will open a Bash console session, you will in the Ubuntu instance. 
+7. Once done with setting up your user name and password, it will open a Bash console session, you will in the Ubuntu instance in your home directory. 
 
 <br/>
 
