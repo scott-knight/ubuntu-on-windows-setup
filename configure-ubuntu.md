@@ -514,8 +514,9 @@ function gitdel(){
 
 function update_ubuntu () {
   echo ''
-  echo 'Updating Ubuntu files, please wait...' 
-  wajig update && 
+  echo 'Updating Ubuntu files, please wait...'
+  wajig update &&
+  wajig autoclean &&
   echo 'Update of Ubuntu complete!'
 }
 
