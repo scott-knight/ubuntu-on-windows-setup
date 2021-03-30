@@ -138,11 +138,13 @@ git clone https://github.com/rbenv/rbenv.git ${HOME}/.rbenv
 
 Add the following to `.zshrc`:
 
-> # RBENV
-> export RBENV_ROOT="${HOME}/.rbenv"
-> export PATH="${RBENV_ROOT}/bin:${RBENV_ROOT}/shims:$PATH"
-> if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
- 
+```sh
+# RBENV
+export RBENV_ROOT="${HOME}/.rbenv"
+export PATH="${RBENV_ROOT}/bin:${RBENV_ROOT}/shims:$PATH"
+if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
+```
+
 Close and reload the Ubuntu instance
 
 <br/>
