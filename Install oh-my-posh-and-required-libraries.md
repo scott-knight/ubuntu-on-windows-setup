@@ -108,4 +108,4 @@ The fonts should now be available for the settings in terminal. How to set the c
 
 You can actually use `oh-my-posh` with Ubuntu. However, I prefer to use `oh-my-zsh`. You can read more about using `oh-my-posh` [here](https://docs.microsoft.com/en-us/windows/terminal/tutorials/powerline-setup#set-up-powerline-in-wsl-ubuntu).
 
-
+Now you are ready to install `Ubuntu`. The install instructions are found [here](https://github.com/scott-knight/ubuntu-on-windows-setup/blob/main/install-ubuntu.md).
