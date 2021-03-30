@@ -1,8 +1,8 @@
-# Install VSCode
+# Install VS Code
 
-This document contains simple instructions for installing VSCode.
+You don't actually have to do this step if you prefer using VIM or Nano to edit config files or write code. I prefer using it, therefore recommend installing it. One of the great features of VS Code is the ability to save/sync your VS Code settings to Github.
 
-## Download VSCode
+## Download VS Code
 
 You can download VSCode [from here](https://code.visualstudio.com/Download). Once downloaded, run the install. 
 
@@ -12,15 +12,14 @@ You can download VSCode [from here](https://code.visualstudio.com/Download). Onc
 
 ![vscode](https://user-images.githubusercontent.com/516548/112903017-97c55a00-90ac-11eb-9077-e9c34b3e8a6f.png)
 
-2. Click sign in to sync settings. 
-3. Select whichever account applies. There will be two options, GitHub and Microsoft. I save my settings to GitHub. In either case, it will open a browser session for you to authenticate into the site. 
-4. Once authenticated, it will sync down any settings previously saved, including any installed plugins/extensions. Any changes made to VSCode will be synced to your account. 
+2. Click `sign in to sync settings`. 
+3. Select whichever account applies. There will be two options, GitHub and Microsoft. I save my settings to GitHub. In either case, it will open a browser session for you to authenticate into the site. Once authenticated, it will sync down any settings previously saved, including any installed plugins/extensions. Any changes made to VSCode will be synced to your account. 
 
 <br/>
 
 ## Plugins (Extensions)
 
-Here is the list of plugins I install from scratch (assuming I can't get to my synced content on GitHub):
+If you haven't previously sync'ed/saved settings to Github or Microsoft, here is a handy list of plugins to install:
 
 ```txt
 Auto Close Tag
@@ -58,9 +57,6 @@ Slim
 Sunburst Theme
 TODO Highlight
 Pug extension pack
-Vetur
-Vue Peek
-Vue VS Code Extension Pack
 vscode-elixir
 XML Tools
 Rainbow CSV
@@ -68,19 +64,19 @@ Edit csv
 Svelte for VSCode
 ```
 
-After extension are installed, I open preferences and settings.
+After extension are installed, open `preferences > settings`.
 
 <br/>
 
-## Settings
+## Preferences > Settings
 
 To get to the settings click `File > Preferences > Settings`
 
-When the settings open, I click the JSON settings icon:
+When the settings open, click the JSON settings icon:
 
 ![vscode settings](https://user-images.githubusercontent.com/516548/112904337-69487e80-90ae-11eb-8416-19d0db5ffafe.png)
 
-Then I paste the following:
+Below is an example of settings. You can copy/paste any (or all) of these settings to the settings file:
 
 ```json
 {
@@ -105,6 +101,6 @@ Then I paste the following:
 }
 ```
 
-Once your account is ready to sync, your extensions are installed and your JSON settings are in place, you are good to go. The next time you install VSCode, simply log in to your account and all the extensions and settings will automatically pull down to VSCode, saving you a ton of time in setup.
+Once your account is ready to sync, your extensions are installed and your JSON settings are in place, you are good to go. The next time you install VS Code, simply log in to your account (as previously described) and all the extensions and settings will automatically pull down to yourl local VS Code, saving you a ton of time in setup.
 
-Now you are ready to move to the next setup step, which can be found [here](https://github.com/scott-knight/ubuntu-on-windows-setup/blob/main/install-windows-terminal.md) 
+Now you are ready to move to the [next setup step](https://github.com/scott-knight/ubuntu-on-windows-setup/blob/main/install-windows-terminal.md).
