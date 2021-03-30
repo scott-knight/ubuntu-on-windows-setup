@@ -32,4 +32,5 @@ code .
 This will attempt to open VSCode and connect VSCode to your WSL2, Ubuntu instance. I'm a little hazy on what happens after it connects, but you should be able to see the files of your home directory.
 
 <br/>
+
 2. Close VSCode and the terminal 
