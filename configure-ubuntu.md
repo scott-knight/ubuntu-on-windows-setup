@@ -777,7 +777,7 @@ Replace the contents of `.gitconfig` with the following:
 	branch = false
 ```
 
-Replace the email and username with your pertinent values.
+Replace the email and username with your values.
 
 <br/>
 
