@@ -65,13 +65,13 @@ To install zsh, run the following:
 wajig install -y zsh 
 ```
 
-To make zsh your default shell, run the following:
+Make zsh your default shell, run the following:
 
 ```sh
 chsh -s $(which zsh)
 ```
 
-Once changed, close the terminal instance and open a new Ubuntu instance.
+Once changed, restart the Ubuntu instance.
 
 You will be prompted to make a selection to create a `.zshrc` file. Select the option that simply adds the comment code and creates the file.
 
@@ -126,6 +126,32 @@ brew tap Homebrew/homebrew-cask && brew tap Homebrew/homebrew-services && brew t
 
 ```sh
 brew install automake curl-openssl elixir erlang node@14 postgres python ruby sqlite
+```
+
+<br/>
+
+## Setup SSH Key
+
+To connect via ssh to external services you will need to generate a new private and public key. Follow the instructions [found here](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) to create a new set.
+
+Once your keys are created, run the following:
+
+```sh
+touch ${HOME}/.ssh/config
+```
+
+Copy the following to the new `config` file:
+
+```sh
+Host *
+  AddKeysToAgent yes
+  UseKeychain yes
+```
+
+You will need to add the new public key to your github account. You can copy the key by running the following:
+
+```sh
+clip.exe < ${HOME}/.ssh/id_ed25519.pub
 ```
 
 <br/>
@@ -328,8 +354,8 @@ export LANG=en_US.UTF-8
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="code ~/.zshrc"
-alias ohmyzsh="code ~/.oh-my-zsh"
+alias zshconfig="code ${HOME}/.zshrc"
+alias ohmyzsh="code ${HOME}/.oh-my-zsh"
 
 # BREW
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
@@ -399,6 +425,8 @@ alias reload='src'
 alias home="cd ${HOME}"
 alias dls="cd ${HOME}/Downloads"
 alias myip="curl https://ipecho.net/plain; echo"
+alias pbcopy="clip.exe"
+alias pbpaste="powershell.exe -command 'Get-Clipboard' | head -n -1"
 
 # ERLANG
 alias erlang="echo Erlang version is: ; erl -eval 'erlang:display(erlang:system_info(otp_release)), halt().'  -noshell ; echo use the command erl to start the Erlang CLI"
@@ -410,9 +438,8 @@ alias migrate="echomigrate ; rake db:migrate"
 alias migratetest="echotestmigration ; RAILS_ENV=test bundle exec rake db:migrate"
 alias rollback="echo Performing rollback... ; bundle exec rake db:rollback"
 alias rnew="echo rails new <app_name> --webpack --skip-turbolinks --skip-spring --skip-coffee -T -B -d postgresql"
-alias envs="touch .ruby-version ; touch .ruby-gemset"
+alias mkenvs="touch .ruby-version ; touch .ruby-gemset"
 alias vedit='EDITOR=vi bin/rails credentials:edit'
-alias cedit='EDITOR="code --wait" bin/rails credentials:edit'
 alias rslh="rails s -b 0.0.0.0 -p $1"
 alias rc='rails c'
 alias rg='rails g'
@@ -460,24 +487,6 @@ alias yl="ylist"
 alias ylg="ylist | grep $1"
 alias ydev="yarn dev"
 
-# Docker containers
-alias contrs="docker ps -a"                     # list all
-alias sacontrs='docker stop $(docker ps -a -q)' # stop all
-alias dacontrs='docker rm $(docker ps -a -q)'   # delete all
-alias scontrs="docker stop"                     # stop single
-alias dcontrs="docker rm -f"                    # delete single
-
-# Docker images
-alias imgs="docker images"     # list all
-alias dimgs="docker image rm"  # delete
-alias dprune="dacontrs && docker image prune -a -f"
-
-# Docker-compose
-alias dcup="docker-compose up"
-alias dcbuild="docker-compose up --build -d"
-alias dockup="dcup"
-alias dockerup="dcup"
-
 alias pstart="pg_ctl -D /home/linuxbrew/.linuxbrew/var/postgres start"
 alias pstop="pg_ctl -D /home/linuxbrew/.linuxbrew/var/postgres stop"
 alias pupdate="brew postgresql-upgrade-database"
@@ -505,13 +514,14 @@ function gitdel(){
 
 function update_ubuntu () {
   echo ''
-  echo 'Updating Ubuntu files' 
+  echo 'Updating Ubuntu files, please wait...' 
   wajig update && 
   echo 'Update of Ubuntu complete!'
 }
 
 function upgrade_ohmyzsh(){
   echo ''
+  echo 'Updating oh-my-zsh, please wait...'
   omz update && 
   echo "Completed upgrading oh-my-zsh!"
 }
@@ -646,43 +656,6 @@ function gits () {
   echo 'gstat    = git status'
   echo ''
 }
-
-function railss () {
-  echo ''
-  echo '****** Rails stuff **************************************'
-  echo 'echomigrate       = echo Performing rails migration'
-  echo 'echotestmigration = echo Performing rails migration for Test'
-  echo 'migrate           = echomigrate ; rake db:migrate'
-  echo 'migratetest       = echotestmigration ; RAILS_ENV=test bundle exec rake db:migrate'
-  echo 'rollback          = echo Performing rollback... ; bundle exec rake db:rollback'
-  echo 'envs              = touch .ruby-version ; touch .ruby-gemset'
-  ecreds
-}
-
-function dockers () {
-  echo ''
-  echo '****** Docker containers **************************************'
-  echo 'contrs   = docker ps -a                    # list all'
-  echo 'sacontrs = docker stop $(docker ps -a -q)  # stop all'
-  echo 'dacontrs = docker rm $(docker ps -a -q)    # delete all'
-  echo 'scontrs  = docker stop                     # stop single'
-  echo 'dcontrs  = docker rm -f                    # delete single'
-  echo ''
-  echo '****** delete Unipay UI image and containers **************************************'
-  alias 'delui = unin && dimgs -f unipay-nuxt-ui_app:latest'
-  alias 'dcui  = unin && docker-compose run app /bin/zsh'
-  echo ''
-  echo '****** Docker images **************************************'
-  echo 'imgs   = docker images                         # list all'
-  echo 'dimgs  = docker image rm                       # delete'
-  echo 'dprune = dacontrs && docker image prune -a -f  # prune'
-  echo ''
-  echo '****** Docker-compose **************************************'
-  echo 'dcup     = docker-compose up'
-  echo 'dcbuild  = docker-compose up --build -d'
-  echo 'dockup   = dcup'
-  echo 'dockerup = dcup'
-}
 ```
 
 <br/>
@@ -758,8 +731,8 @@ Replace the contents of `.gitconfig` with the following:
 
 ```sh
 [user]
-	email = [your email]
-	name = [your-username]
+  email = [your email]
+  name = [your-username]
 
 [pull]
   rebase = false
@@ -774,14 +747,12 @@ Replace the contents of `.gitconfig` with the following:
   dump = cat-file -p
 
 [pager]
-	branch = false
+  branch = false
 ```
 
 Replace the email and username with your values.
 
 <br/>
-
-## Setup SSSH
 
 
 
