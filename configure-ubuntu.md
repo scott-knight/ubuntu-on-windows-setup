@@ -516,6 +516,8 @@ function update_ubuntu () {
   echo ''
   echo 'Updating Ubuntu files, please wait...'
   wajig update &&
+  wajig upgrade -y &&
+  wajig autoremove &&
   wajig autoclean &&
   echo 'Update of Ubuntu complete!'
 }
