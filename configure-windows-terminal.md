@@ -49,3 +49,5 @@ In the example you can see that I pasted the `ubuntu` shell `guid` in the `defau
 <br/>
 
 8. After you save the settings, when you click on the `Windows Terminal` icon in the `Start Menu`, it will automatically open desired shell.
+9. Now you are ready to customize `Ubuntu`. Instructions are found [here](https://github.com/scott-knight/ubuntu-on-windows-setup/blob/main/configure-ubuntu.md)
+ 
