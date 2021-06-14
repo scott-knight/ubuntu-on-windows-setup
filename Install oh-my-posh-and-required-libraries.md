@@ -1,8 +1,8 @@
 # Install oh-my-posh and Required Libraries
 
-This document contains information on how to install oh-my-posh and various libraies used for powershell and zsh themes.
+This document contains information on how to install oh-my-posh and various libraies used for powershell and zsh themes which use Powerline Icons in the console.
 
-[Oh-my-posh](https://ohmyposh.dev/) is similar to [oh-my-zsh](https://ohmyz.sh/). It works in Windows PowerShell which is used in the Windows Terminal. There's minimal setup needed for running (my personal preference) zsh instances. You don't have to do this step either if you don't plan on using a powershell or zsh theme which requires Powerline icons. Sources: [Powerline Setup](https://docs.microsoft.com/en-us/windows/terminal/tutorials/powerline-setup), [Cascadia Code](https://github.com/microsoft/cascadia-code)
+[Oh-my-posh](https://ohmyposh.dev/) is similar to [oh-my-zsh](https://ohmyz.sh/). It works in Windows PowerShell which is used in the Windows Terminal. There's minimal setup needed for running (my personal preference) zsh instances. YOU DO NOT HAVE TO DO THIS STEP if you don't plan on using a powershell or zsh theme which requires Powerline icons. Sources: [Powerline Setup](https://docs.microsoft.com/en-us/windows/terminal/tutorials/powerline-setup), [Cascadia Code](https://github.com/microsoft/cascadia-code)
 
 
 ## Install Git For Windows
