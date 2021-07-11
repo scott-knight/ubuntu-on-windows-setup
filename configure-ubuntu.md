@@ -6,7 +6,7 @@ This is the step-by-step guide for customizing Ubuntu to use all the settings, a
 
 ## Update Ubuntu
 
-1. Close all open `Windows Terminal` windows. Open a new `Ubuntu` window. 
+1. Close all open `Windows Terminal` windows. Open a new `Ubuntu` window.
 2. You should update `Ubuntu` with the latest security patches and other default updates by running the following:
 
 ```sh
@@ -20,7 +20,7 @@ sudo bash -c 'for i in update {,dist-}upgrade auto{remove,clean}; do apt-get $i 
 `Wajig` is a simple package installation tool. `Keychain` Allows you to store your `SSH` keys in a local keychain for the time your Windows OS is up and running. To install the utilities, run the following:
 
 ```sh
-sudo apt-get install wajig keychain
+sudo apt-get install wajig
 ```
 
 Once finished, run the following:
@@ -29,7 +29,7 @@ Once finished, run the following:
 wajig update
 ```
 
-You will use this command to update Ubuntu from now on. 
+You will use this command to update Ubuntu from now on.
 
 <br/>
 
@@ -62,7 +62,7 @@ wajig install -y git
 To install zsh, run the following:
 
 ```sh
-wajig install -y zsh 
+wajig install -y zsh
 ```
 
 Make zsh your default shell, run the following:
@@ -145,13 +145,28 @@ Copy the following to the new `config` file:
 ```sh
 Host *
   AddKeysToAgent yes
-  UseKeychain yes
 ```
 
 You will need to add the new public key to your github account. You can copy the key by running the following:
 
 ```sh
 clip.exe < ${HOME}/.ssh/id_ed25519.pub
+```
+
+<br/>
+
+## INSTALL KEYCHAIN
+
+Run the following:
+
+```
+wajig install keychain
+```
+
+Once installed, at your key to your keychain
+
+```
+/usr/bin/keychain --clear $HOME/.ssh/id_ed25519
 ```
 
 <br/>
@@ -205,7 +220,7 @@ npm i -g ngrok
 
 ## Install Yarn
 
-To install yarn, run the following: 
+To install yarn, run the following:
 
 ```sh
 npm i -g yarn
@@ -238,7 +253,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/
 
 ## Copy the .zshrc Content
 
-Replace the entire `.zshrc` file with this code: 
+Replace the entire `.zshrc` file with this code:
 
 ```zsh
 # If you come from bash you might have to change your $PATH.
@@ -412,7 +427,7 @@ Reload the ubuntu instance
 
 ## Copy .zsh_alias_list Content
 
-Replace the entire `.zsh_alias_list` file with this code: 
+Replace the entire `.zsh_alias_list` file with this code:
 
 ```zsh
 #! /bin/zsh
@@ -429,7 +444,7 @@ alias pbpaste="powershell.exe -command 'Get-Clipboard' | head -n -1"
 # ERLANG
 alias erlang="echo Erlang version is: ; erl -eval 'erlang:display(erlang:system_info(otp_release)), halt().'  -noshell ; echo use the command erl to start the Erlang CLI"
 
-# Ruby/Rails 
+# Ruby/Rails
 alias echomigrate="echo Performing rails migration"
 alias echotestmigration="echo Performing rails migration for Test"
 alias migrate="echomigrate ; rake db:migrate"
@@ -523,7 +538,7 @@ function update_ubuntu () {
 function upgrade_ohmyzsh(){
   echo ''
   echo 'Updating oh-my-zsh, please wait...'
-  omz update && 
+  omz update &&
   echo "Completed upgrading oh-my-zsh!"
 }
 
@@ -758,12 +773,3 @@ Replace the email and username with your values.
 ## Reload
 
 After you have completed the setup, close and reload the ubuntu instance.
-
-
-
-
-
-
-
-
-
