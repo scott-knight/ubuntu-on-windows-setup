@@ -15,7 +15,7 @@ sudo bash -c 'for i in update {,dist-}upgrade auto{remove,clean}; do apt-get $i 
 
 <br/>
 
-## Install Wajig and Keychain
+## Install Wajig
 
 `Wajig` is a simple package installation tool. `Keychain` Allows you to store your `SSH` keys in a local keychain for the time your Windows OS is up and running. To install the utilities, run the following:
 
