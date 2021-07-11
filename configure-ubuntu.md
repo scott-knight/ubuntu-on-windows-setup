@@ -417,7 +417,8 @@ else
   echo "not sure what happened with ${ZASYS}"
 fi
 
-/usr/bin/keychain -q --nogui $HOME/.ssh/id_ed25519
+# /usr/bin/keychain -q --nogui $HOME/.ssh/id_ed25519
+/usr/bin/keychain --clear $HOME/.ssh/id_ed25519
 source $HOME/.keychain/$HOST-sh
 ```
 
