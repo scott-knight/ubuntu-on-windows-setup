@@ -16,6 +16,8 @@ Below is the step-by-step guide on how to install all the bits needed to get an 
 6. [Configure Windows Terminal](https://github.com/scott-knight/ubuntu-on-windows-setup/blob/main/configure-windows-terminal.md)
 7. [Configure Ubuntu](https://github.com/scott-knight/ubuntu-on-windows-setup/blob/main/configure-ubuntu.md)
 
-Once you have completed steps 1-4, you shouldn't have to do them again. Once Windows Terminal is setup, you should be good for the lifetime of your Windows 10 install (pending needed updates if there are any).
+Steps 1-4 are Windows setup instructions. Once you have completed steps 1-4, you shouldn't have to do them again. You will be able to create and destroy Ubuntu installs without having to repeat steps 1-4. 
+
+Once Windows Terminal is setup, you should be good for the lifetime of your Windows 10 install (pending needed updates if there are any).
 
 You will need to repeat steps 5-7 if you decide to delete your current install of Ubuntu and reinstall it.
