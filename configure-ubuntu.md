@@ -125,7 +125,7 @@ brew tap Homebrew/homebrew-cask && brew tap Homebrew/homebrew-services && brew t
 6. Install a basic set of utilities
 
 ```sh
-brew install automake curl-openssl elixir erlang node@14 postgres python ruby sqlite
+brew install automake curl-openssl elixir erlang node postgres python ruby sqlite
 ```
 
 <br/>
@@ -373,7 +373,7 @@ alias ohmyzsh="code ${HOME}/.oh-my-zsh"
 # BREW
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 export BREW_OPT_PATH="/home/linuxbrew/.linuxbrew/opt"
-export PATH="${BREW_OPT_PATH}/node@14/bin:$PATH"
+export PATH="${BREW_OPT_PATH}/node/bin:$PATH"
 
 # export OPENSSL_PATH="$(brew --prefix openssl@1.1)"
 
