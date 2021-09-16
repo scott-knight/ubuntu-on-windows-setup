@@ -47,6 +47,15 @@ Setup for these files will come in a later step.
 
 <br/>
 
+## Install liff7 for bootsnap gem
+
+Rails uses bootsnap which uses libff7 (as of date 2021/09/15). To install it, run the following:
+
+```sh
+wget http://es.archive.ubuntu.com/ubuntu/pool/main/libf/libffi/libffi7_3.3-4_amd64.deb
+sudo dpkg -i libffi7_3.3-4_amd64.deb
+```
+
 ## Install Git
 
 To install Git, run the following:
