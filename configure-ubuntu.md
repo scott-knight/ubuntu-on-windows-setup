@@ -210,11 +210,11 @@ To install RBENV plugins, run the following:
 ```
 mkdir -p "$(rbenv root)"/plugins &&
 git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)/plugins/ruby-build" &&
-git clone git://github.com/jf/rbenv-gemset.git "$(rbenv root)/plugins/rbenv-gemset" &&
+git clone https://github.com/jf/rbenv-gemset.git "$(rbenv root)/plugins/rbenv-gemset" &&
 git clone https://github.com/rkh/rbenv-whatis.git "$(rbenv root)/plugins/rbenv-whatis" &&
 git clone https://github.com/rkh/rbenv-use.git "$(rbenv root)/plugins/rbenv-use" &&
-git clone git://github.com/tpope/rbenv-aliases.git "$(rbenv root)/plugins/rbenv-aliases" &&
-cd ${HOME}/.rbenv && src/configure && make -C src
+git clone https://github.com/tpope/rbenv-aliases.git "$(rbenv root)/plugins/rbenv-aliases" &&
+cd $HOME/.rbenv && mkdir versions && src/configure && make -C src && cd $HOME && rbenv alias --auto
 ```
 
 <br/>
